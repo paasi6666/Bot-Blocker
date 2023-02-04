@@ -24,7 +24,6 @@ Following bot-accounts will be blocked, if the script is executed:
 - boboboyyy
 - chainsawmaid
 - cheesy_fries
-- crashbutter
 - cutepuss58
 - ddddiutv
 - dicum23
