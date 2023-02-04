@@ -62,7 +62,6 @@ Following bot-accounts will be blocked, if the script is executed:
 - samlikesfish86
 - sandudes
 - sheilac804
-- sickclit
 - smaccker
 - summonar
 - tankman2
