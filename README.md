@@ -42,6 +42,7 @@ Following bot-accounts will be blocked, if the script is executed:
 - idudus
 - karlan222222
 - lalisaaa
+- lixen1313 
 - manyarmpittsss
 - manycowsss
 - manyduckkss
@@ -61,6 +62,7 @@ Following bot-accounts will be blocked, if the script is executed:
 - samlikesfish86
 - sandudes
 - sheilac804
+- sickclit
 - smaccker
 - summonar
 - tankman2
