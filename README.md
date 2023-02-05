@@ -2,7 +2,7 @@
 Clean up your 9gag! Automatically block unwanted bot-accounts.
 
 ## Prerequisites
-- Firefox
+- Firefox / Chrome
 - Python3
 - Pip
 
@@ -13,7 +13,7 @@ pip install selenium
 ```
 
 ## Usage
-Execute the main.py file. After the start, a firefox browser will be opened. Log into 9gag and press enter in the command to continue the script.
+Execute the main.py file. After the start, choose between 1 or 2 (1 for firefox, 2 for chrome). Log into 9gag and press enter in the command to continue the script.
 python main.py
 
 ## Bot-accounts blocked
