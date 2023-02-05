@@ -13,9 +13,25 @@ pip install selenium
 ```
 
 ## Usage
-Execute the main.py file. After the start, choose between 1 or 2 (1 for firefox, 2 for chrome). Log into 9gag and press enter in the command to continue the script.
-python main.py
-
+1. Execute the script
+```
+python main.py 
+```
+2. Choose between Firefox [1] or Chrome [2]
+```
+Choose 1 for Firefox
+Choose 2 for Chrome
+```
+3. Choose between Blocking [1] or Reporting and Blocking [2]
+```
+Choose 1 to Block accounts
+Choose 2 to Block and Report accounts
+```
+4. A browser with 9gag will appear. Log into 9gag and press enter in the cmd to continue the script.
+```
+Log into 9gag. Press ENTER after login.
+```
+5. The Script will automatically block and or report all the accounts in the `bots.txt` file.
 ## Bot-accounts blocked
 Following bot-accounts will be blocked, if the script is executed:
 - 25279ic
