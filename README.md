@@ -56,7 +56,6 @@ Following bot-accounts will be blocked, if the script is executed:
 - manyleggsss
 - muchcatsss
 - muchfishesss
-- nanaimoba
 - nowicu
 - nutcracck
 - nutcracckerr
