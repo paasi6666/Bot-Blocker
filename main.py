@@ -33,16 +33,17 @@ with open('bots.txt', 'r') as file:
         bot = bot.strip()
         driver.get('https://9gag.com/u/'+bot)
         try:
-            WebDriverWait(driver,5).until(EC.presence_of_element_located((By.CSS_SELECTOR, "div[class='profile-more'] div[class='uikit-popup-menu'] div a[class='button']")))
-            driver.find_element(By.CSS_SELECTOR, "div[class='profile-more'] div[class='uikit-popup-menu'] div a[class='button']").click()
+            WebDriverWait(driver,5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".uikit-popup-menu a")))
+            driver.find_element(By.CSS_SELECTOR, ".uikit-popup-menu a").click()
 
-            WebDriverWait(driver,5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[1]/div/div[1]/div[2]/div[1]/div/div[2]/div/div/div[2]/ul/li[3]/a")))
-            blockButton = driver.find_element(By.XPATH, "/html/body/div[1]/div/div[1]/div[2]/div[1]/div/div[2]/div/div/div[2]/ul/li[3]/a")
+            WebDriverWait(driver,5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".uikit-popup-menu .menu ul li:nth-child(3) a")))
+            blockButton = driver.find_element(By.CSS_SELECTOR, ".uikit-popup-menu .menu ul li:nth-child(3) a")
+            print(blockButton.get_attribute('innerHTML'))
             if "Unblock" not in blockButton.get_attribute('innerHTML'):
                 blockButton.click()
 
-                WebDriverWait(driver,5).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[4]/div/div/div[2]/div/button[2]")))
-                driver.find_element(By.XPATH, "/html/body/div[4]/div/div/div[2]/div/button[2]").click()
+                WebDriverWait(driver,5).until(EC.presence_of_element_located((By.CSS_SELECTOR, ".ui-dialog__actions button.btn-color-danger")))
+                driver.find_element(By.CSS_SELECTOR, ".ui-dialog__actions button.btn-color-danger").click()
                 print("User "+bot+" successfully blocked")
             else:
                 driver.get("https://9gag.com")
